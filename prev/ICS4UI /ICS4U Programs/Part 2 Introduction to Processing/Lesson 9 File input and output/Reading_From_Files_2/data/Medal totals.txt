@@ -1,7 +1,0 @@
-Nor	11
-Can	9
-Chi	11
-Ger	4
-USA	7
-Jap	2
-Ivo	64

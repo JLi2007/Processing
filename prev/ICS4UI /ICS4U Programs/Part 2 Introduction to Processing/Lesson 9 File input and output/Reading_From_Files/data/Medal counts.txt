@@ -1,7 +1,0 @@
-Norway,4,3,4
-Canada,4,3,2
-China,2,3,6
-Germany,3,1,0
-USA,2,1,4
-Japan,2,0,0
-Ivory Coast,12,30,22
