@@ -18,9 +18,8 @@ void setup() {
 
 void draw() {
    background(50);
+   // fill with a c variable
    fill(c,255,255);
-
-
    // first rectangle/"line"
    rect(0,a,width,rect_height);
    // maps more rectangles ("lines")
@@ -36,7 +35,7 @@ void draw() {
    // so color variable stays in range 0, 255
    if (c > 255) {c -= 255;} else if (c < 0) { c += 255;} 
   
-   // random conditional color statements with a variable to add more lines with a random starting point
+   // random conditional if statements with [a] variable to add more lines with a random starting point
    // for the if/else if/else implementation
    if (a == height / 2) {
        i = int(random(height));
@@ -51,7 +50,9 @@ void draw() {
        lines.append(int(i));
    }
    else {
+       // otherwise, increment c
        c ++;
    }
+   // increment c
    c++; 
 }

@@ -1,0 +1,18 @@
+//// FORMAT
+// Location
+// R Value
+// G Value
+// B Value
+
+Plains
+72
+111
+20
+Deserts
+255
+230
+146
+Snowy Plains
+255
+245
+245
