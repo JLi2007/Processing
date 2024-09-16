@@ -13,11 +13,11 @@ void setup() {
     Float result = roundAny(number, digits);
     if (result == null) {
         println("Cannot round to specified digits");
-} else if (isInt) {
+    } else if (isInt) {
         println(int(result));
-} else {
+    } else {
         println(result);
-}
+    }
 }
 
 
@@ -27,13 +27,13 @@ Float roundAny(float unrounded, int digits) {
     while(unrounded >= 10) {
         count += 1;
         unrounded = unrounded / 10;
-}
+    }
     
     
     // if digits is equal or less to count, that means the amount of digits to the left of the decimal is more than the digits specified to round to (not possible to round)
     if (digits <= count) {
         return null;
-}
+    }
     
     // multiply by [10^digits-1] to obtain the correct amount of digits before the decimal place
     float rounded = round(unrounded * pow(10,digits - 1));
@@ -43,7 +43,7 @@ Float roundAny(float unrounded, int digits) {
     // if divide is NOT 1, round rounded (which is everything to the left of decimal place) then divide it by divide
     if (divide!= 1.0) {
         return(rounded / divide);
-}
+    }
     // otherwise, indicate that the number is in integer and return rounded
     isInt = true;
     return(rounded);
