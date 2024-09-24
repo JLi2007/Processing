@@ -1,0 +1,6 @@
+Spurs,W,D,L,L,L,W,W,D,L,W
+United,W,W,W,L,L,L,L,L,L,D
+Liverpool,D,D,D,W,L,W,W,W,W,W
+Chelsea,W,D,D,W,L,D,W,W,W,L
+Arsenal,D,W,D,W,L,W,W,W,D,D    
+City,D,W,D,W,W,W,W,W,D,W 
