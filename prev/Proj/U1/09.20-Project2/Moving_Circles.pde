@@ -22,7 +22,6 @@ void setup(){
   background(0);
   // load the gridData.txt file and store in a String array
   String[] ballData = loadStrings("gridData.txt");
-
   // call functions
   initializeBalls(ballData);
   make2DArray();
