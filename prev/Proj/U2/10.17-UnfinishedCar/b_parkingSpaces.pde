@@ -1,4 +1,4 @@
-public class parkingSpaces{
+class parkingSpaces{
     int lots = 2;
     float lineWidth;
     float lineHeight;
@@ -6,7 +6,6 @@ public class parkingSpaces{
     int spaceIndex;
     // MAY REMOVE THIS one
     ArrayList<PVector> numPositions = new ArrayList<PVector>();
-    static ArrayList<PVector> lotPositions = new ArrayList<PVector>();
     boolean[] isVacant;
 
     parkingSpaces(int numSpots){
@@ -71,7 +70,7 @@ public class parkingSpaces{
     }
 
     // to obtain lotPositions from other files
-    public static ArrayList<PVector> getLotPositions() {
+    ArrayList<PVector> getLotPositions() {
         return lotPositions;
     }
 
