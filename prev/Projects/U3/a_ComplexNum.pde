@@ -23,7 +23,7 @@ class ComplexNum{
 
     // ADDS THE COMPLEX NUMBERS
     ComplexNum add(ComplexNum complexNum){
-        return((new ComplexNum(roundToOneDecimal(this.realNumber + complexNum.realNumber), roundToOneDecimal(this.imaginaryNumber + complexNum.imaginaryNumber))));
+        return((new ComplexNum(this.realNumber + complexNum.realNumber, this.imaginaryNumber + complexNum.imaginaryNumber)));
     }
 
     // ABSOLUTE VALUE
@@ -31,8 +31,14 @@ class ComplexNum{
         return(sqrt((this.realNumber*this.realNumber)+(this.imaginaryNumber*this.imaginaryNumber)));
     }
 
-    // ROUNDS TO ONE DECIMAL PLACE
-    float roundToOneDecimal(float value) {
-        return round(value * 10) / 10.0;
+    // MULTIPLY
+    ComplexNum multiply(ComplexNum complexNum){
+        return(new ComplexNum((this.realNumber*complexNum.realNumber - this.imaginaryNumber*complexNum.imaginaryNumber),(this.realNumber*complexNum.
+        imaginaryNumber + this.imaginaryNumber*complexNum.realNumber)));
     }
+
+    // // ROUNDS TO ONE DECIMAL PLACE
+    // float roundToOneDecimal(float value) {
+    //     return round(value * 10) / 10.0;
+    // }
 }
